@@ -7,7 +7,7 @@ import Footer from './sections/Footer'
 function App() {
   return (
     <>
-      <Header Saas />
+      <Header />
       <Hero />
       <Features />
       <Pricing />
