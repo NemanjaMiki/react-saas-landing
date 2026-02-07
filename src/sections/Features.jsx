@@ -3,7 +3,7 @@ import features from "../data/features";
 
 export default function Features() {
   return (
-    <section id="features" className="py-32 bg-white">
+    <section id="features" className="py-32 bg-white animate-fade">
       <Container>
         <h2 className="text-4xl font-bold text-center text-slate-900">
           Features
@@ -15,7 +15,8 @@ export default function Features() {
           {features.map((feature, i) => (
             <div
               key={i}
-              className="rounded-xl border p-6 hover:shadow-lg transition"
+              className={`rounded-xl border p-6 hover:shadow-lg transition animate-fade`}
+              style={{ animationDelay: `${i * 0.15}s` }}
             >
               <h3 className="text-xl font-semibold text-slate-900">
                 {feature.title}

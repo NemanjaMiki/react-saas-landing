@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function Hero() {
     return (
-        <section className="bg-gradient-to-b from-slate-50 to-white py-32">
+        <section className="bg-gradient-to-b from-slate-50 to-white py-32 animate-fade">
             <Container>
                 <div className="max-w-2xl text-center mx-auto">
                     <h1 className="text-5xl font-extrabold tracking-tight text-slate-900">

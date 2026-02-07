@@ -2,7 +2,7 @@ import Container from "../components/Container";
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white py-12">
+    <footer className="bg-slate-900 text-white py-12 animate-fade">
       <Container>
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
           <span className="font-bold text-lg">ReactSaaS</span>

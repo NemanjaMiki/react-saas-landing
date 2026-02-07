@@ -4,7 +4,7 @@ import Button from "../components/Button";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-32 bg-slate-50">
+    <section id="pricing" className="py-32 bg-slate-50 animate-fade">
       <Container>
         <h2 className="text-4xl font-bold text-center text-slate-900">
           Pricing Plans
@@ -16,8 +16,8 @@ export default function Pricing() {
           {pricingPlans.map((plan, i) => (
             <div
               key={i}
-              className={`rounded-xl border p-6 flex flex-col justify-between shadow-sm transition hover:shadow-lg
-                ${plan.popular ? "border-blue-500 bg-blue-50" : "bg-white"}`}
+              className={`rounded-xl border p-6 flex flex-col justify-between shadow-sm transition hover:shadow-lg animate-fade`}
+              style={{ animationDelay: `${i * 0.2}s` }}
             >
               <div>
                 <h3 className="text-xl font-semibold text-slate-900">
