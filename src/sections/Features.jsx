@@ -11,11 +11,10 @@ export default function Features() {
         <p className="mt-4 text-center text-slate-600 max-w-2xl mx-auto">
           Everything you need to launch and grow your SaaS business.
         </p>
-
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {features.map((feature, index) => (
+          {features.map((feature, i) => (
             <div
-              key={index}
+              key={i}
               className="rounded-xl border p-6 hover:shadow-lg transition"
             >
               <h3 className="text-xl font-semibold text-slate-900">
