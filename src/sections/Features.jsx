@@ -1,25 +1,31 @@
-import { CheckCircle } from "lucide-react";
+import Container from "../components/Container";
+import features from "../data/features";
 
 export default function Features() {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 text-center">
-        <div className="p-6 border rounded-lg">
-          <CheckCircle className="mx-auto mb-4 text-blue-500" size={40} />
-          <h3 className="font-semibold mb-2">Task Automation</h3>
-          <p className="text-gray-600">Automate repetitive workflows and save time.</p>
+    <section id="features" className="py-32 bg-white">
+      <Container>
+        <h2 className="text-4xl font-bold text-center text-slate-900">
+          Features
+        </h2>
+        <p className="mt-4 text-center text-slate-600 max-w-2xl mx-auto">
+          Everything you need to launch and grow your SaaS business.
+        </p>
+
+        <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="rounded-xl border p-6 hover:shadow-lg transition"
+            >
+              <h3 className="text-xl font-semibold text-slate-900">
+                {feature.title}
+              </h3>
+              <p className="mt-2 text-slate-600">{feature.description}</p>
+            </div>
+          ))}
         </div>
-        <div className="p-6 border rounded-lg">
-          <CheckCircle className="mx-auto mb-4 text-blue-500" size={40} />
-          <h3 className="font-semibold mb-2">Team Collaboration</h3>
-          <p className="text-gray-600">Work together with your team in real-time.</p>
-        </div>
-        <div className="p-6 border rounded-lg">
-          <CheckCircle className="mx-auto mb-4 text-blue-500" size={40} />
-          <h3 className="font-semibold mb-2">Analytics</h3>
-          <p className="text-gray-600">Track productivity and performance easily.</p>
-        </div>
-      </div>
+      </Container>
     </section>
-  )
+  );
 }
