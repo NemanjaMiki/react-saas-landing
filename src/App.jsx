@@ -13,6 +13,9 @@ function App() {
       <Pricing />
       <Footer />
     </>
+
+
+
   )
 }
 
